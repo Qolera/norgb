@@ -13,12 +13,10 @@
 #include "../zmk-nodefree-config/international_chars/german.dtsi"
 
 
-&euro_sign {
-  ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C); 
-};
-&ene {
-  ZMK_UNICODE_PAIR(ene, N0, N0, F, N1, N0, N0, D, N1);
-};
+// euro sign
+ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
+// eñe EÑE sign
+ZMK_UNICODE_PAIR(ene, N0, N0, F, N1, N0, N0, D, N1)
 
 #define BASE 0
 #define LOWER 1
